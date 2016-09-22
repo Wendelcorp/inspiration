@@ -1,9 +1,10 @@
 <h1>Index Page</h1>
 
 <% @posts.each do |post| %>
-
-<%= image_tag post.image %>
+<div class="index-post-housing">
+<%= image_tag post.image, :class => "index-thumbnail" %>
 <h2><%= post.title %></h2>
 <p><%= post.description %></p>
 <p><%= post.source %></p>
+</div>
 <% end %>
