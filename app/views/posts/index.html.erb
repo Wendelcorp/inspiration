@@ -1,8 +1,9 @@
 <h1>Index Page</h1>
 
-<%= @posts.each do |post| %>
+<% @posts.each do |post| %>
 
+<%= image_tag post.image %>
 <h2><%= post.title %></h2>
 <p><%= post.description %></p>
-
+<p><%= post.source %></p>
 <% end %>
